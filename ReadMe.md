@@ -1,90 +1,66 @@
-🤖 AutoBots — Robô Seguidor de Linha
 
-Projeto acadêmico desenvolvido para a disciplina de Projeto Integrador do curso de Ciência da Computação.
-O AutoBots é um robô seguidor de linha autônomo construído com Arduino Uno R3, capaz de detectar e seguir trajetórias por meio de sensores infravermelhos. O projeto integra conceitos de robótica, automação e controle, explorando o potencial da eletrônica embarcada e da programação em C/C++ para microcontroladores.
 
-🧠 Objetivo do Projeto
+<div align="center">
 
-O objetivo principal é desenvolver um robô móvel capaz de seguir uma linha preta sobre uma superfície branca, aplicando técnicas de controle e leitura de sensores.
-O projeto também visa aprimorar habilidades em:
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Jura&size=26&pause=1000&color=E71D36&width=435&lines=Seja+Bem-Vindo+ao+Grupo+AUTOBOTS+)](https://git.io/typing-svg)
 
-Programação embarcada com Arduino;
 
-Montagem e integração de circuitos eletrônicos;
+# 🤖 AutoBots — Robô Seguidor de Linha
 
-Trabalho em equipe e documentação técnica;
+[![Status](https://img.shields.io/badge/status-development-e71d36)](#) 
+[![Arduino](https://img.shields.io/badge/board-Arduino%20Uno-121212?logo=arduino&logoColor=white)](https://www.arduino.cc/) 
+[![License: MIT](https://img.shields.io/badge/license-MIT-000000)](LICENSE)
 
-Desenvolvimento de um produto funcional para competições de robótica.
+</div>
 
-⚙️ Componentes Utilizados
-🪛 Hardware
+---
 
-01 Placa Arduino Uno R3 (ATmega328P)
+## 🔎 Visão geral
 
-01 Módulo Ponte H L298N (controle dos motores)
+Projeto acadêmico de robótica que desenvolve um **robô seguidor de linha autônomo** baseado em **Arduino Uno R3 (ATmega328P)**.  
+O robô lê sensores infravermelhos para acompanhar trajetórias e utiliza um driver de motores para controlar a tração em pistas de competição.
 
-02 Motores DC com engrenagens
+---
 
-02 Rodas + 01 Roda boba
+## 🧭 Funcionalidades principais
 
-01 Kit Chassi 2WD para robô
+- Seguimento automático de linha (4 sensores IR)  
+- Controle de motores via Ponte H (L298N) com PWM  
+- Detecção de obstáculos com sensor ultrassônico (HC-SR04)  
+- Alimentação independente via suporte para 4x pilhas AA  
+- Código modular e comentado para fácil reprodução e ajuste
 
-01 Sensor Ultrassônico HC-SR04
+---
 
-04 Módulos sensores infravermelhos (seguidor de linha)
+## ⚙️ Componentes (resumo)
 
-01 Suporte para pilhas AA
+| Componente | Quantidade |
+|---|---:|
+| Arduino Uno R3 (ATmega328P) | 1 |
+| Ponte H L298N | 1 |
+| Motores DC com engrenagens | 2 |
+| Módulos seguidor de linha (IR) | 4 |
+| Sensor ultrassônico HC-SR04 | 1 |
+| Chassi 2WD, rodas e roda boba | Kit |
+| Protoboard / jumpers / cabos | Vários |
 
-01 Cabo 9V
+---
 
-01 Mini Protoboard
+## 🧠 Especificações do microcontrolador
 
-Jumpers macho/macho e macho/fêmea
+- **Modelo:** ATmega328P (Arduino Uno R3)  
+- **Vcc:** 5V — **Clock:** 16 MHz  
+- **Flash:** 32 KB — **SRAM:** 2 KB — **EEPROM:** 1 KB
 
-🧩 Microcontrolador
+---
 
-Modelo: ATmega328P
 
-Tensão de operação: 5V
 
-Clock: 16 MHz
 
-Memória Flash: 32 KB
 
-SRAM: 2 KB
 
-EEPROM: 1 KB
 
-🧭 Funcionamento
 
-O robô utiliza módulos sensores infravermelhos para detectar a linha no chão.
-Esses sensores enviam sinais ao Arduino, que processa os dados e decide como os motores DC devem reagir — ajustando a direção para manter o robô sobre a linha.
 
-O módulo Ponte H L298N é responsável por controlar a rotação dos motores, permitindo movimentos para frente, curvas à esquerda/direita e paradas suaves.
-O sensor ultrassônico HC-SR04 complementa o sistema, detectando obstáculos à frente e evitando colisões.
 
-🧰 Tecnologias e Ferramentas
 
-Arduino IDE para desenvolvimento do firmware
-
-C/C++ como linguagem de programação
-
-GitHub para versionamento e colaboração
-
-HTML + CSS + Bootstrap para o site do projeto e documentação
-
-TinkerCAD (opcional) para simulação de circuitos
-
-🧑‍💻 Equipe
-
-Carlos Eduardo
-
-Guilherme	
-
-Gustavo Teixeira 	
-
-Lucas
-
-Victor Sardinha	
-
-Professor Orientador	Eduardo Furlan
