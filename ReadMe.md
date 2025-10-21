@@ -52,7 +52,7 @@ O robô lê sensores infravermelhos para acompanhar trajetórias e utiliza um dr
 - **Vcc:** 5V — **Clock:** 16 MHz  
 - **Flash:** 32 KB — **SRAM:** 2 KB — **EEPROM:** 1 KB
 
----
+
 
 
 
