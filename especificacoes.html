@@ -10,36 +10,140 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <style>
+    .component-card {
+      transition: transform 0.2s ease;
+    }
+
+    .component-card:hover {
+      transform: scale(1.03);
+    }
+
+    .card {
+      border: none;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: contain;
+      padding: 15px;
+    }
+
+    main {
+      margin-bottom: 60px;
+    }
+  </style>
 </head>
 
 <body class="Fundo">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-danger" href="index.html">Robô Seguidor de Linha</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top border-bottom shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand fw-bold text-danger jurauniquifier d-flex align-items-center ms-3" href="index.html">
+        <img src="src/img/logo.png" alt="Logo AutoBots" width="110" height="70" class="me-2">
+      </a>
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white active" href="especificacoes.html">Especificações</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="especificacoes.html">Especificações</a>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="equipe.html">Equipe</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Conteúdo -->
+
+  <br><br>
+
   <main class="container mt-5 pt-5">
-    <h1 class="fw-bold text-danger text-center mb-4">Especificações do Robô</h1>
-    <div class="row justify-content-center">
-      <!-- Card exemplo -->
-      <div class="col-md-4 mb-4">
-        <div class="card shadow-sm h-100">
-          <img src="src/img/placa-Arduino.png" class="card-img-top" alt="Arduino Uno">
-          <div class="card-body text-center">
-            <p class="card-text">Arduino Uno R3 com microcontrolador ATmega328P.</p>
+    <h1 class="fw-bold text-danger text-center mb-5">Especificações do Robô</h1>
+
+    <div class="row justify-content-center g-4">
+
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/chassi.png" alt="Chassis do carro" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title"> Kit do Chassi do carro</h6>
           </div>
         </div>
       </div>
-      <!-- Continue os outros cards iguais ao seu código original -->
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/motor.png" alt="Motores DC" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">2x Motores DC com engrenagens e módulos de velocidade</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/arduino.png" alt="Arduino Uno" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Placa compatível Arduino Uno R3</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/usb.png" alt="Cabo USB" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Cabo USB</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/Ponteh.png" alt="Ponte H" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Módulo Ponte H drive motor</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/ultrassonico.png" alt="Sensor Ultrassônico" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Sensor Ultrassônico HC-SR04 e suporte</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/sensores.png" alt="Módulo seguidor de linha" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">4x Módulos e Sensores seguidor-linha</h6>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/cabo.png" alt="Cabo 9V" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Cabo 9V</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card component-card shadow-sm text-center p-3 h-100">
+          <img src="src/img/sensor.png" alt="Cabo wire" class="card-img-top">
+          <div class="card-body">
+            <h6 class="card-title">Módulo seguidor seguidor-linha</h6>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </main>
 
