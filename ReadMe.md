@@ -66,6 +66,3 @@ O robô lê sensores infravermelhos para acompanhar trajetórias e utiliza um dr
 
 
 # anhangueraautobots-lab
-# anhangueraautobots-lab
-# anhangueraautobots-lab
-# anhangueraautobots-lab.github.io
